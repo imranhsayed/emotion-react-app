@@ -1,7 +1,15 @@
 import React from 'react';
 import { Link } from '@reach/router';
 import styled from '@emotion/styled';
+import { injectGlobal } from 'emotion';
 import colors from './colors/colors';
+
+// These styles will be applied to all the elements inside this component
+injectGlobal`
+ * {
+ 	box-sizing: border-box;
+ }
+`;
 
 const Container = styled( 'header' )`
   background-color: ${ colors.dark };
