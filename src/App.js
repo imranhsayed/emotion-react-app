@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
 import './App.css';
 import Home from "./components/Home";
+import { Router } from '@reach/router';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-		<Home/>
+		<Router>
+		<Home path="/"/>
+		</Router>
       </div>
     );
   }
